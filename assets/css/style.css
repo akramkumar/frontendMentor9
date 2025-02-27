@@ -128,3 +128,16 @@ body {
     background-color:hsl(0, 100%, 95%);
     color: hsl(4, 100%, 67%)!important;
 }
+.submit-card{
+    background-color: hsl(0, 0%, 100%);
+    padding: 40px;
+    border-radius: 25px;
+    width: 330px;
+}
+.img-icon{
+    height: 48px;
+}
+span{
+    color:hsl(234, 29%, 20%);
+    font-weight: 700;
+}
