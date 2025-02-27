@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.submit-page {
+    display: none;
+}
+
+body {
+    background-color: hsl(235, 18%, 26%);
+    justify-items: center;
+    padding-top: 150px;
+    font-family: Roboto;
+    font-size: 16px;
+    color: hsl(234, 29%, 20%);
+}
+
+.sign-card {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.card-left {
+    padding: 25px;
+    width: 360px;
+}
+
+.img-design {
+    height: 475px;
+    width: 316px;
+}
+
+.sign-title {
+    padding-top: 20px;
+    font-size: xxx-large;
+    font-weight: 700;
+}
+
+.description {
+    padding-top: 10px;
+    font-weight: 400;
+    display: flex;
+    font-size: 14px;
+    gap: 10px;
+    color: hsl(235, 18%, 26%);
+}
+
+.title-description {
+    padding-bottom: 10px;
+    padding-top: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    color: hsl(235, 18%, 26%);
+}
+
+.sign-input-form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.email-label {
+    font-weight: 700;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+
+.email {
+    border: 1px solid hsl(0, 0%, 58%);
+    border-radius: 5px;
+    height: 40px;
+    padding-left: 20px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.email-input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.submit-button {
+    padding-top: 21px;
+
+}
+
+.submit {
+    height: 40px;
+    width: 325px;
+    border-radius: 5px;
+    border: 1px solid hsl(234, 29%, 20%);
+    color: white;
+    background-color: hsl(234, 29%, 20%);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.submit:hover {
+    border: none;
+    background: linear-gradient(to right, #ff5378, #ff5e5b, #ff693e);
+
+}
+
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+}
+
+.error-msg {
+    display: none;
+    font-weight: 700;
+    font-size: 12px;
+    padding-bottom: 5px;
+    color: hsl(4, 100%, 67%);
+}
+
+.error-input,
+.error-input:focus,
+.error-input:hover{
+    border: 1px solid hsl(4, 100%, 67%);
+    border-radius: 5px;
+    height: 40px;
+    padding-left: 20px;
+    width: 300px;
+    cursor: pointer;
+    background-color:hsl(0, 100%, 95%);
+    color: hsl(4, 100%, 67%)!important;
+}
