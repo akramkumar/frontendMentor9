@@ -4,6 +4,11 @@
     display: none;
 }
 
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
 body {
     background-color: hsl(235, 18%, 26%);
     justify-items: center;
@@ -25,9 +30,14 @@ body {
     width: 360px;
 }
 
-.img-design {
+.img-design1 {
     height: 475px;
     width: 316px;
+}
+
+.img-design2 {
+    display: none;
+    width: 100vw;
 }
 
 .sign-title {
@@ -99,6 +109,7 @@ body {
 .submit:hover {
     border: none;
     background: linear-gradient(to right, #ff5378, #ff5e5b, #ff693e);
+    box-shadow: hsl(0, 100%, 95%) 0px 9px 2px -1px;
 
 }
 
@@ -118,26 +129,99 @@ body {
 
 .error-input,
 .error-input:focus,
-.error-input:hover{
+.error-input:hover {
     border: 1px solid hsl(4, 100%, 67%);
     border-radius: 5px;
     height: 40px;
     padding-left: 20px;
     width: 300px;
     cursor: pointer;
-    background-color:hsl(0, 100%, 95%);
-    color: hsl(4, 100%, 67%)!important;
+    background-color: hsl(0, 100%, 95%);
+    color: hsl(4, 100%, 67%) !important;
 }
-.submit-card{
+
+.submit-card {
     background-color: hsl(0, 0%, 100%);
     padding: 40px;
     border-radius: 25px;
     width: 330px;
 }
-.img-icon{
+
+.img-icon {
     height: 48px;
 }
-span{
-    color:hsl(234, 29%, 20%);
+
+span {
+    color: hsl(234, 29%, 20%);
     font-weight: 700;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 650px) {
+    body {
+        background-color: white;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .sign-card {
+        padding: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .card-left {
+        width: 80vw;
+    }
+
+    .submit {
+        width: 81vw;
+        height: 6.5vh;
+    }
+
+    .email {
+        width: 75vw;
+        height: 7vh;
+    }
+
+    .sign-title {
+        /* font-size: 40px; */
+        font-size: 5vh;
+    }
+
+    .title-description {
+        font-size: 4vw;
+    }
+
+    .description {
+        font-size: 4vw;
+    }
+
+    .flex-box {
+        padding-right: 5px;
+    }
+
+    .email-label {
+        font-size: 3.5vw;
+    }
+
+    .error-msg {
+        font-size: 3.5vw;
+    }
+
+    .submit-card {
+        display: grid;
+        grid-template-rows: 30vh 15vh 40vh;
+        padding: 0px;
+        border-radius: 25px;
+        width: 85vw;
+    }
+
+    .image-suc {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding-bottom: 15px;
+    }
 }

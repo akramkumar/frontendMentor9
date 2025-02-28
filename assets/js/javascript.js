@@ -5,6 +5,9 @@ const signup=document.querySelector(".sign-up-page");
 const submit= document.querySelector(".submit-page");
 const dismiss=document.querySelector(".dismiss");
 const span=document.querySelector("span");
+const image=document.querySelector(".image");
+const imageDesign1=document.querySelector(".img-design1");
+const imageDesign2=document.querySelector(".img-design2");
 const handsubmit = e => {
     e.preventDefault(e);
     const formData = new FormData(e.target);
@@ -30,4 +33,19 @@ dismiss.addEventListener("click", ()=>{
         inputField.classList.remove("error-input");
         errorMsg.style.display="none";
         form.reset();
+});
+console.log(window.innerWidth);
+function resize(){
+    if(window.innerWidth>650){
+        imageDesign1.style.display="block";
+        imageDesign2.style.display="none";
+    }
+    else{
+        imageDesign1.style.display="none";
+        imageDesign2.style.display="block";
+    }
+}
+document.addEventListener("DOMContentLoaded", function() {
+    resize();
+    window.addEventListener("resize", resize);
 });
